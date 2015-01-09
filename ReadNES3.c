@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
     printf("ReadNES%s.%s\n",Version,Revision);
     if (argc<2)
     {
-        printf("How to use:\n\./ReadNES3 [File] [Program ROM repeat count] [CharacterROM repeat count]\n");
+        printf("How to use:\n./ReadNES3 [File] [Program ROM repeat count] [CharacterROM repeat count]\n");
         return 0;
     }
 
