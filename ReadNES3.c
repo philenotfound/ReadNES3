@@ -1,4 +1,6 @@
 //3GenGames, 2011.
+//Rewrite coming soon, probably, now that the code will be
+//more accessible and can't be so terrible.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -44,7 +46,7 @@ int main(int argc, char *argv[])
     printf("ReadNES%s.%s\n",Version,Revision);
     if (argc<2)
     {
-        printf("\n\nNo arguments, aborting. See read me for details.\n\n");
+        printf("How to use:\n\./ReadNES3 [File] [Program ROM repeat count] [CharacterROM repeat count]\n");
         return 0;
     }
 
@@ -60,20 +62,20 @@ int main(int argc, char *argv[])
     case 2:
         ProgramRepeat=1;
         CharacterRepeat=1;
-        printf("\n\nNo data repetition.\n");
+        printf("\nNo data repetition.\n");
         break;
     case 3:
         ProgramRepeat=atoi(argv[2]);
         CharacterRepeat=1;
-        printf("\n\nWriting program ROM data to chip %u time(s).\n",ProgramRepeat);
+        printf("\nWriting program ROM data to chip %u time(s).\n",ProgramRepeat);
         break;
     case 4:
         ProgramRepeat=atoi(argv[2]);
         CharacterRepeat=atoi(argv[3]);
-        printf("\n\nWriting program ROM data to chip %u time(s).\nWriting character ROM data to chip %u time(s).\n",ProgramRepeat,CharacterRepeat);
+        printf("\nWriting program ROM data to chip %u time(s).\nWriting character ROM data to chip %u time(s).\n",ProgramRepeat,CharacterRepeat);
         break;
     default:
-        printf("\n\nToo many arguments, aborting.\n\n");
+        printf("\nToo many arguments, aborting.\n\n");
         return 0;
     }
 
