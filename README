@@ -3,4 +3,4 @@ ReadNES3
 
 =====
 
-NES ROM Splitter for putting NES ROM files made by an assembler on to a custom cartridge.
+Tool to help getting homebrew .NES ROM files onto a physical cartridge.
